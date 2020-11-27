@@ -7,28 +7,53 @@
 }
 
 body {
-  width:100%;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container {
-  border:1px solid black;
-  padding:2rem;
+.payForm {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding: 1rem 2rem;
+  background: linear-gradient(to bottom right, #ddd, #eee);
   border-radius: 2rem;
 }
-/* form {
-  display:flex;
-  flex-direction: column;
-} */
-
-h2 {
-  display:inline-block;
-  width:40%;
+.payForm .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #ccc;
 }
 
-label {
-  display:inline-block;
+.payForm h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.payForm .logo img {
+  display: block;
+  height: 40px;
+}
+
+.payForm h3 {
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.payForm input {
+  width: 100%;
+}
+.payForm .cardDate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.payForm .cardDate .cvv {
+  flex-basis: 30%;
+  flex-grow: 0;
 }
